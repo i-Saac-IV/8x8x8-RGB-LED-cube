@@ -1,0 +1,4 @@
+# Files to ignore
+*.epf
+*.s#*
+8x8x8-RGB-LED-cube_bus.sch
