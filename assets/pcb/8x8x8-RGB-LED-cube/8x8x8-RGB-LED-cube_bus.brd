@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="0" x2="0" y2="60.96" width="0.1524" layer="20"/>
+<wire x1="0" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="20"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="0" width="0.1524" layer="20"/>
+<wire x1="86.36" y1="0" x2="0" y2="0" width="0.1524" layer="20"/>
+<hole x="1.27" y="7.62" drill="0.65"/>
+<hole x="2.54" y="7.62" drill="0.65"/>
+<hole x="3.81" y="7.62" drill="0.65"/>
+<hole x="5.08" y="7.62" drill="0.65"/>
+<hole x="6.35" y="7.62" drill="0.65"/>
+<hole x="7.62" y="7.62" drill="0.65"/>
+<hole x="8.89" y="7.62" drill="0.65"/>
+<hole x="10.16" y="7.62" drill="0.65"/>
+<hole x="11.43" y="7.62" drill="0.65"/>
+<hole x="12.7" y="7.62" drill="0.65"/>
+<hole x="13.97" y="7.62" drill="0.65"/>
+<hole x="15.24" y="7.62" drill="0.65"/>
+<hole x="16.51" y="7.62" drill="0.65"/>
+<hole x="17.78" y="7.62" drill="0.65"/>
+<hole x="19.05" y="7.62" drill="0.65"/>
+<hole x="20.32" y="7.62" drill="0.65"/>
+<hole x="21.59" y="7.62" drill="0.65"/>
+<hole x="22.86" y="7.62" drill="0.65"/>
+<hole x="24.13" y="7.62" drill="0.65"/>
+<hole x="25.4" y="7.62" drill="0.65"/>
+<hole x="26.67" y="7.62" drill="0.65"/>
+<hole x="27.94" y="7.62" drill="0.65"/>
+<hole x="29.21" y="7.62" drill="0.65"/>
+<hole x="30.48" y="7.62" drill="0.65"/>
+<hole x="31.75" y="7.62" drill="0.65"/>
+<hole x="33.02" y="7.62" drill="0.65"/>
+<hole x="34.29" y="7.62" drill="0.65"/>
+<hole x="35.56" y="7.62" drill="0.65"/>
+<hole x="36.83" y="7.62" drill="0.65"/>
+<hole x="38.1" y="7.62" drill="0.65"/>
+<hole x="39.37" y="7.62" drill="0.65"/>
+<hole x="40.64" y="7.62" drill="0.65"/>
+<hole x="41.91" y="7.62" drill="0.65"/>
+<hole x="43.18" y="7.62" drill="0.65"/>
+<hole x="44.45" y="7.62" drill="0.65"/>
+<hole x="45.72" y="7.62" drill="0.65"/>
+<hole x="46.99" y="7.62" drill="0.65"/>
+<hole x="48.26" y="7.62" drill="0.65"/>
+<hole x="49.53" y="7.62" drill="0.65"/>
+<hole x="50.8" y="7.62" drill="0.65"/>
+<hole x="52.07" y="7.62" drill="0.65"/>
+<hole x="53.34" y="7.62" drill="0.65"/>
+<hole x="54.61" y="7.62" drill="0.65"/>
+<hole x="55.88" y="7.62" drill="0.65"/>
+<hole x="57.15" y="7.62" drill="0.65"/>
+<hole x="58.42" y="7.62" drill="0.65"/>
+<hole x="59.69" y="7.62" drill="0.65"/>
+<hole x="60.96" y="7.62" drill="0.65"/>
+<hole x="62.23" y="7.62" drill="0.65"/>
+<hole x="63.5" y="7.62" drill="0.65"/>
+<hole x="64.77" y="7.62" drill="0.65"/>
+<hole x="66.04" y="7.62" drill="0.65"/>
+<hole x="67.31" y="7.62" drill="0.65"/>
+<hole x="68.58" y="7.62" drill="0.65"/>
+<hole x="69.85" y="7.62" drill="0.65"/>
+<hole x="71.12" y="7.62" drill="0.65"/>
+<hole x="72.39" y="7.62" drill="0.65"/>
+<hole x="73.66" y="7.62" drill="0.65"/>
+<hole x="74.93" y="7.62" drill="0.65"/>
+<hole x="76.2" y="7.62" drill="0.65"/>
+<hole x="77.47" y="7.62" drill="0.65"/>
+<hole x="78.74" y="7.62" drill="0.65"/>
+<hole x="80.01" y="7.62" drill="0.65"/>
+<hole x="81.28" y="7.62" drill="0.65"/>
+<hole x="82.55" y="7.62" drill="0.65"/>
+<hole x="83.82" y="7.62" drill="0.65"/>
+<hole x="85.09" y="7.62" drill="0.65"/>
+<hole x="1.27" y="15.24" drill="0.65"/>
+<hole x="2.54" y="15.24" drill="0.65"/>
+<hole x="3.81" y="15.24" drill="0.65"/>
+<hole x="5.08" y="15.24" drill="0.65"/>
+<hole x="6.35" y="15.24" drill="0.65"/>
+<hole x="7.62" y="15.24" drill="0.65"/>
+<hole x="8.89" y="15.24" drill="0.65"/>
+<hole x="10.16" y="15.24" drill="0.65"/>
+<hole x="11.43" y="15.24" drill="0.65"/>
+<hole x="12.7" y="15.24" drill="0.65"/>
+<hole x="13.97" y="15.24" drill="0.65"/>
+<hole x="15.24" y="15.24" drill="0.65"/>
+<hole x="16.51" y="15.24" drill="0.65"/>
+<hole x="17.78" y="15.24" drill="0.65"/>
+<hole x="19.05" y="15.24" drill="0.65"/>
+<hole x="20.32" y="15.24" drill="0.65"/>
+<hole x="21.59" y="15.24" drill="0.65"/>
+<hole x="22.86" y="15.24" drill="0.65"/>
+<hole x="24.13" y="15.24" drill="0.65"/>
+<hole x="25.4" y="15.24" drill="0.65"/>
+<hole x="26.67" y="15.24" drill="0.65"/>
+<hole x="27.94" y="15.24" drill="0.65"/>
+<hole x="29.21" y="15.24" drill="0.65"/>
+<hole x="30.48" y="15.24" drill="0.65"/>
+<hole x="31.75" y="15.24" drill="0.65"/>
+<hole x="33.02" y="15.24" drill="0.65"/>
+<hole x="34.29" y="15.24" drill="0.65"/>
+<hole x="35.56" y="15.24" drill="0.65"/>
+<hole x="36.83" y="15.24" drill="0.65"/>
+<hole x="38.1" y="15.24" drill="0.65"/>
+<hole x="39.37" y="15.24" drill="0.65"/>
+<hole x="40.64" y="15.24" drill="0.65"/>
+<hole x="41.91" y="15.24" drill="0.65"/>
+<hole x="43.18" y="15.24" drill="0.65"/>
+<hole x="44.45" y="15.24" drill="0.65"/>
+<hole x="45.72" y="15.24" drill="0.65"/>
+<hole x="46.99" y="15.24" drill="0.65"/>
+<hole x="48.26" y="15.24" drill="0.65"/>
+<hole x="49.53" y="15.24" drill="0.65"/>
+<hole x="50.8" y="15.24" drill="0.65"/>
+<hole x="52.07" y="15.24" drill="0.65"/>
+<hole x="53.34" y="15.24" drill="0.65"/>
+<hole x="54.61" y="15.24" drill="0.65"/>
+<hole x="55.88" y="15.24" drill="0.65"/>
+<hole x="57.15" y="15.24" drill="0.65"/>
+<hole x="58.42" y="15.24" drill="0.65"/>
+<hole x="59.69" y="15.24" drill="0.65"/>
+<hole x="60.96" y="15.24" drill="0.65"/>
+<hole x="62.23" y="15.24" drill="0.65"/>
+<hole x="63.5" y="15.24" drill="0.65"/>
+<hole x="64.77" y="15.24" drill="0.65"/>
+<hole x="66.04" y="15.24" drill="0.65"/>
+<hole x="67.31" y="15.24" drill="0.65"/>
+<hole x="68.58" y="15.24" drill="0.65"/>
+<hole x="69.85" y="15.24" drill="0.65"/>
+<hole x="71.12" y="15.24" drill="0.65"/>
+<hole x="72.39" y="15.24" drill="0.65"/>
+<hole x="73.66" y="15.24" drill="0.65"/>
+<hole x="74.93" y="15.24" drill="0.65"/>
+<hole x="76.2" y="15.24" drill="0.65"/>
+<hole x="77.47" y="15.24" drill="0.65"/>
+<hole x="78.74" y="15.24" drill="0.65"/>
+<hole x="80.01" y="15.24" drill="0.65"/>
+<hole x="81.28" y="15.24" drill="0.65"/>
+<hole x="82.55" y="15.24" drill="0.65"/>
+<hole x="83.82" y="15.24" drill="0.65"/>
+<hole x="85.09" y="15.24" drill="0.65"/>
+<hole x="1.27" y="22.86" drill="0.65"/>
+<hole x="2.54" y="22.86" drill="0.65"/>
+<hole x="3.81" y="22.86" drill="0.65"/>
+<hole x="5.08" y="22.86" drill="0.65"/>
+<hole x="6.35" y="22.86" drill="0.65"/>
+<hole x="7.62" y="22.86" drill="0.65"/>
+<hole x="8.89" y="22.86" drill="0.65"/>
+<hole x="10.16" y="22.86" drill="0.65"/>
+<hole x="11.43" y="22.86" drill="0.65"/>
+<hole x="12.7" y="22.86" drill="0.65"/>
+<hole x="13.97" y="22.86" drill="0.65"/>
+<hole x="15.24" y="22.86" drill="0.65"/>
+<hole x="16.51" y="22.86" drill="0.65"/>
+<hole x="17.78" y="22.86" drill="0.65"/>
+<hole x="19.05" y="22.86" drill="0.65"/>
+<hole x="20.32" y="22.86" drill="0.65"/>
+<hole x="21.59" y="22.86" drill="0.65"/>
+<hole x="22.86" y="22.86" drill="0.65"/>
+<hole x="24.13" y="22.86" drill="0.65"/>
+<hole x="25.4" y="22.86" drill="0.65"/>
+<hole x="26.67" y="22.86" drill="0.65"/>
+<hole x="27.94" y="22.86" drill="0.65"/>
+<hole x="29.21" y="22.86" drill="0.65"/>
+<hole x="30.48" y="22.86" drill="0.65"/>
+<hole x="31.75" y="22.86" drill="0.65"/>
+<hole x="33.02" y="22.86" drill="0.65"/>
+<hole x="34.29" y="22.86" drill="0.65"/>
+<hole x="35.56" y="22.86" drill="0.65"/>
+<hole x="36.83" y="22.86" drill="0.65"/>
+<hole x="38.1" y="22.86" drill="0.65"/>
+<hole x="39.37" y="22.86" drill="0.65"/>
+<hole x="40.64" y="22.86" drill="0.65"/>
+<hole x="41.91" y="22.86" drill="0.65"/>
+<hole x="43.18" y="22.86" drill="0.65"/>
+<hole x="44.45" y="22.86" drill="0.65"/>
+<hole x="45.72" y="22.86" drill="0.65"/>
+<hole x="46.99" y="22.86" drill="0.65"/>
+<hole x="48.26" y="22.86" drill="0.65"/>
+<hole x="49.53" y="22.86" drill="0.65"/>
+<hole x="50.8" y="22.86" drill="0.65"/>
+<hole x="52.07" y="22.86" drill="0.65"/>
+<hole x="53.34" y="22.86" drill="0.65"/>
+<hole x="54.61" y="22.86" drill="0.65"/>
+<hole x="55.88" y="22.86" drill="0.65"/>
+<hole x="57.15" y="22.86" drill="0.65"/>
+<hole x="58.42" y="22.86" drill="0.65"/>
+<hole x="59.69" y="22.86" drill="0.65"/>
+<hole x="60.96" y="22.86" drill="0.65"/>
+<hole x="62.23" y="22.86" drill="0.65"/>
+<hole x="63.5" y="22.86" drill="0.65"/>
+<hole x="64.77" y="22.86" drill="0.65"/>
+<hole x="66.04" y="22.86" drill="0.65"/>
+<hole x="67.31" y="22.86" drill="0.65"/>
+<hole x="68.58" y="22.86" drill="0.65"/>
+<hole x="69.85" y="22.86" drill="0.65"/>
+<hole x="71.12" y="22.86" drill="0.65"/>
+<hole x="72.39" y="22.86" drill="0.65"/>
+<hole x="73.66" y="22.86" drill="0.65"/>
+<hole x="74.93" y="22.86" drill="0.65"/>
+<hole x="76.2" y="22.86" drill="0.65"/>
+<hole x="77.47" y="22.86" drill="0.65"/>
+<hole x="78.74" y="22.86" drill="0.65"/>
+<hole x="80.01" y="22.86" drill="0.65"/>
+<hole x="81.28" y="22.86" drill="0.65"/>
+<hole x="82.55" y="22.86" drill="0.65"/>
+<hole x="83.82" y="22.86" drill="0.65"/>
+<hole x="85.09" y="22.86" drill="0.65"/>
+<hole x="1.27" y="30.48" drill="0.65"/>
+<hole x="2.54" y="30.48" drill="0.65"/>
+<hole x="3.81" y="30.48" drill="0.65"/>
+<hole x="5.08" y="30.48" drill="0.65"/>
+<hole x="6.35" y="30.48" drill="0.65"/>
+<hole x="7.62" y="30.48" drill="0.65"/>
+<hole x="8.89" y="30.48" drill="0.65"/>
+<hole x="10.16" y="30.48" drill="0.65"/>
+<hole x="11.43" y="30.48" drill="0.65"/>
+<hole x="12.7" y="30.48" drill="0.65"/>
+<hole x="13.97" y="30.48" drill="0.65"/>
+<hole x="15.24" y="30.48" drill="0.65"/>
+<hole x="16.51" y="30.48" drill="0.65"/>
+<hole x="17.78" y="30.48" drill="0.65"/>
+<hole x="19.05" y="30.48" drill="0.65"/>
+<hole x="20.32" y="30.48" drill="0.65"/>
+<hole x="21.59" y="30.48" drill="0.65"/>
+<hole x="22.86" y="30.48" drill="0.65"/>
+<hole x="24.13" y="30.48" drill="0.65"/>
+<hole x="25.4" y="30.48" drill="0.65"/>
+<hole x="26.67" y="30.48" drill="0.65"/>
+<hole x="27.94" y="30.48" drill="0.65"/>
+<hole x="29.21" y="30.48" drill="0.65"/>
+<hole x="30.48" y="30.48" drill="0.65"/>
+<hole x="31.75" y="30.48" drill="0.65"/>
+<hole x="33.02" y="30.48" drill="0.65"/>
+<hole x="34.29" y="30.48" drill="0.65"/>
+<hole x="35.56" y="30.48" drill="0.65"/>
+<hole x="36.83" y="30.48" drill="0.65"/>
+<hole x="38.1" y="30.48" drill="0.65"/>
+<hole x="39.37" y="30.48" drill="0.65"/>
+<hole x="40.64" y="30.48" drill="0.65"/>
+<hole x="41.91" y="30.48" drill="0.65"/>
+<hole x="43.18" y="30.48" drill="0.65"/>
+<hole x="44.45" y="30.48" drill="0.65"/>
+<hole x="45.72" y="30.48" drill="0.65"/>
+<hole x="46.99" y="30.48" drill="0.65"/>
+<hole x="48.26" y="30.48" drill="0.65"/>
+<hole x="49.53" y="30.48" drill="0.65"/>
+<hole x="50.8" y="30.48" drill="0.65"/>
+<hole x="52.07" y="30.48" drill="0.65"/>
+<hole x="53.34" y="30.48" drill="0.65"/>
+<hole x="54.61" y="30.48" drill="0.65"/>
+<hole x="55.88" y="30.48" drill="0.65"/>
+<hole x="57.15" y="30.48" drill="0.65"/>
+<hole x="58.42" y="30.48" drill="0.65"/>
+<hole x="59.69" y="30.48" drill="0.65"/>
+<hole x="60.96" y="30.48" drill="0.65"/>
+<hole x="62.23" y="30.48" drill="0.65"/>
+<hole x="63.5" y="30.48" drill="0.65"/>
+<hole x="64.77" y="30.48" drill="0.65"/>
+<hole x="66.04" y="30.48" drill="0.65"/>
+<hole x="67.31" y="30.48" drill="0.65"/>
+<hole x="68.58" y="30.48" drill="0.65"/>
+<hole x="69.85" y="30.48" drill="0.65"/>
+<hole x="71.12" y="30.48" drill="0.65"/>
+<hole x="72.39" y="30.48" drill="0.65"/>
+<hole x="73.66" y="30.48" drill="0.65"/>
+<hole x="74.93" y="30.48" drill="0.65"/>
+<hole x="76.2" y="30.48" drill="0.65"/>
+<hole x="77.47" y="30.48" drill="0.65"/>
+<hole x="78.74" y="30.48" drill="0.65"/>
+<hole x="80.01" y="30.48" drill="0.65"/>
+<hole x="81.28" y="30.48" drill="0.65"/>
+<hole x="82.55" y="30.48" drill="0.65"/>
+<hole x="83.82" y="30.48" drill="0.65"/>
+<hole x="85.09" y="30.48" drill="0.65"/>
+<hole x="1.27" y="38.1" drill="0.65"/>
+<hole x="2.54" y="38.1" drill="0.65"/>
+<hole x="3.81" y="38.1" drill="0.65"/>
+<hole x="5.08" y="38.1" drill="0.65"/>
+<hole x="6.35" y="38.1" drill="0.65"/>
+<hole x="7.62" y="38.1" drill="0.65"/>
+<hole x="8.89" y="38.1" drill="0.65"/>
+<hole x="10.16" y="38.1" drill="0.65"/>
+<hole x="11.43" y="38.1" drill="0.65"/>
+<hole x="12.7" y="38.1" drill="0.65"/>
+<hole x="13.97" y="38.1" drill="0.65"/>
+<hole x="15.24" y="38.1" drill="0.65"/>
+<hole x="16.51" y="38.1" drill="0.65"/>
+<hole x="17.78" y="38.1" drill="0.65"/>
+<hole x="19.05" y="38.1" drill="0.65"/>
+<hole x="20.32" y="38.1" drill="0.65"/>
+<hole x="21.59" y="38.1" drill="0.65"/>
+<hole x="22.86" y="38.1" drill="0.65"/>
+<hole x="24.13" y="38.1" drill="0.65"/>
+<hole x="25.4" y="38.1" drill="0.65"/>
+<hole x="26.67" y="38.1" drill="0.65"/>
+<hole x="27.94" y="38.1" drill="0.65"/>
+<hole x="29.21" y="38.1" drill="0.65"/>
+<hole x="30.48" y="38.1" drill="0.65"/>
+<hole x="31.75" y="38.1" drill="0.65"/>
+<hole x="33.02" y="38.1" drill="0.65"/>
+<hole x="34.29" y="38.1" drill="0.65"/>
+<hole x="35.56" y="38.1" drill="0.65"/>
+<hole x="36.83" y="38.1" drill="0.65"/>
+<hole x="38.1" y="38.1" drill="0.65"/>
+<hole x="39.37" y="38.1" drill="0.65"/>
+<hole x="40.64" y="38.1" drill="0.65"/>
+<hole x="41.91" y="38.1" drill="0.65"/>
+<hole x="43.18" y="38.1" drill="0.65"/>
+<hole x="44.45" y="38.1" drill="0.65"/>
+<hole x="45.72" y="38.1" drill="0.65"/>
+<hole x="46.99" y="38.1" drill="0.65"/>
+<hole x="48.26" y="38.1" drill="0.65"/>
+<hole x="49.53" y="38.1" drill="0.65"/>
+<hole x="50.8" y="38.1" drill="0.65"/>
+<hole x="52.07" y="38.1" drill="0.65"/>
+<hole x="53.34" y="38.1" drill="0.65"/>
+<hole x="54.61" y="38.1" drill="0.65"/>
+<hole x="55.88" y="38.1" drill="0.65"/>
+<hole x="57.15" y="38.1" drill="0.65"/>
+<hole x="58.42" y="38.1" drill="0.65"/>
+<hole x="59.69" y="38.1" drill="0.65"/>
+<hole x="60.96" y="38.1" drill="0.65"/>
+<hole x="62.23" y="38.1" drill="0.65"/>
+<hole x="63.5" y="38.1" drill="0.65"/>
+<hole x="64.77" y="38.1" drill="0.65"/>
+<hole x="66.04" y="38.1" drill="0.65"/>
+<hole x="67.31" y="38.1" drill="0.65"/>
+<hole x="68.58" y="38.1" drill="0.65"/>
+<hole x="69.85" y="38.1" drill="0.65"/>
+<hole x="71.12" y="38.1" drill="0.65"/>
+<hole x="72.39" y="38.1" drill="0.65"/>
+<hole x="73.66" y="38.1" drill="0.65"/>
+<hole x="74.93" y="38.1" drill="0.65"/>
+<hole x="76.2" y="38.1" drill="0.65"/>
+<hole x="77.47" y="38.1" drill="0.65"/>
+<hole x="78.74" y="38.1" drill="0.65"/>
+<hole x="80.01" y="38.1" drill="0.65"/>
+<hole x="81.28" y="38.1" drill="0.65"/>
+<hole x="82.55" y="38.1" drill="0.65"/>
+<hole x="83.82" y="38.1" drill="0.65"/>
+<hole x="85.09" y="38.1" drill="0.65"/>
+<hole x="1.27" y="45.72" drill="0.65"/>
+<hole x="2.54" y="45.72" drill="0.65"/>
+<hole x="3.81" y="45.72" drill="0.65"/>
+<hole x="5.08" y="45.72" drill="0.65"/>
+<hole x="6.35" y="45.72" drill="0.65"/>
+<hole x="7.62" y="45.72" drill="0.65"/>
+<hole x="8.89" y="45.72" drill="0.65"/>
+<hole x="10.16" y="45.72" drill="0.65"/>
+<hole x="11.43" y="45.72" drill="0.65"/>
+<hole x="12.7" y="45.72" drill="0.65"/>
+<hole x="13.97" y="45.72" drill="0.65"/>
+<hole x="15.24" y="45.72" drill="0.65"/>
+<hole x="16.51" y="45.72" drill="0.65"/>
+<hole x="17.78" y="45.72" drill="0.65"/>
+<hole x="19.05" y="45.72" drill="0.65"/>
+<hole x="20.32" y="45.72" drill="0.65"/>
+<hole x="21.59" y="45.72" drill="0.65"/>
+<hole x="22.86" y="45.72" drill="0.65"/>
+<hole x="24.13" y="45.72" drill="0.65"/>
+<hole x="25.4" y="45.72" drill="0.65"/>
+<hole x="26.67" y="45.72" drill="0.65"/>
+<hole x="27.94" y="45.72" drill="0.65"/>
+<hole x="29.21" y="45.72" drill="0.65"/>
+<hole x="30.48" y="45.72" drill="0.65"/>
+<hole x="31.75" y="45.72" drill="0.65"/>
+<hole x="33.02" y="45.72" drill="0.65"/>
+<hole x="34.29" y="45.72" drill="0.65"/>
+<hole x="35.56" y="45.72" drill="0.65"/>
+<hole x="36.83" y="45.72" drill="0.65"/>
+<hole x="38.1" y="45.72" drill="0.65"/>
+<hole x="39.37" y="45.72" drill="0.65"/>
+<hole x="40.64" y="45.72" drill="0.65"/>
+<hole x="41.91" y="45.72" drill="0.65"/>
+<hole x="43.18" y="45.72" drill="0.65"/>
+<hole x="44.45" y="45.72" drill="0.65"/>
+<hole x="45.72" y="45.72" drill="0.65"/>
+<hole x="46.99" y="45.72" drill="0.65"/>
+<hole x="48.26" y="45.72" drill="0.65"/>
+<hole x="49.53" y="45.72" drill="0.65"/>
+<hole x="50.8" y="45.72" drill="0.65"/>
+<hole x="52.07" y="45.72" drill="0.65"/>
+<hole x="53.34" y="45.72" drill="0.65"/>
+<hole x="54.61" y="45.72" drill="0.65"/>
+<hole x="55.88" y="45.72" drill="0.65"/>
+<hole x="57.15" y="45.72" drill="0.65"/>
+<hole x="58.42" y="45.72" drill="0.65"/>
+<hole x="59.69" y="45.72" drill="0.65"/>
+<hole x="60.96" y="45.72" drill="0.65"/>
+<hole x="62.23" y="45.72" drill="0.65"/>
+<hole x="63.5" y="45.72" drill="0.65"/>
+<hole x="64.77" y="45.72" drill="0.65"/>
+<hole x="66.04" y="45.72" drill="0.65"/>
+<hole x="67.31" y="45.72" drill="0.65"/>
+<hole x="68.58" y="45.72" drill="0.65"/>
+<hole x="69.85" y="45.72" drill="0.65"/>
+<hole x="71.12" y="45.72" drill="0.65"/>
+<hole x="72.39" y="45.72" drill="0.65"/>
+<hole x="73.66" y="45.72" drill="0.65"/>
+<hole x="74.93" y="45.72" drill="0.65"/>
+<hole x="76.2" y="45.72" drill="0.65"/>
+<hole x="77.47" y="45.72" drill="0.65"/>
+<hole x="78.74" y="45.72" drill="0.65"/>
+<hole x="80.01" y="45.72" drill="0.65"/>
+<hole x="81.28" y="45.72" drill="0.65"/>
+<hole x="82.55" y="45.72" drill="0.65"/>
+<hole x="83.82" y="45.72" drill="0.65"/>
+<hole x="85.09" y="45.72" drill="0.65"/>
+<hole x="1.27" y="53.34" drill="0.65"/>
+<hole x="2.54" y="53.34" drill="0.65"/>
+<hole x="3.81" y="53.34" drill="0.65"/>
+<hole x="5.08" y="53.34" drill="0.65"/>
+<hole x="6.35" y="53.34" drill="0.65"/>
+<hole x="7.62" y="53.34" drill="0.65"/>
+<hole x="8.89" y="53.34" drill="0.65"/>
+<hole x="10.16" y="53.34" drill="0.65"/>
+<hole x="11.43" y="53.34" drill="0.65"/>
+<hole x="12.7" y="53.34" drill="0.65"/>
+<hole x="13.97" y="53.34" drill="0.65"/>
+<hole x="15.24" y="53.34" drill="0.65"/>
+<hole x="16.51" y="53.34" drill="0.65"/>
+<hole x="17.78" y="53.34" drill="0.65"/>
+<hole x="19.05" y="53.34" drill="0.65"/>
+<hole x="20.32" y="53.34" drill="0.65"/>
+<hole x="21.59" y="53.34" drill="0.65"/>
+<hole x="22.86" y="53.34" drill="0.65"/>
+<hole x="24.13" y="53.34" drill="0.65"/>
+<hole x="25.4" y="53.34" drill="0.65"/>
+<hole x="26.67" y="53.34" drill="0.65"/>
+<hole x="27.94" y="53.34" drill="0.65"/>
+<hole x="29.21" y="53.34" drill="0.65"/>
+<hole x="30.48" y="53.34" drill="0.65"/>
+<hole x="31.75" y="53.34" drill="0.65"/>
+<hole x="33.02" y="53.34" drill="0.65"/>
+<hole x="34.29" y="53.34" drill="0.65"/>
+<hole x="35.56" y="53.34" drill="0.65"/>
+<hole x="36.83" y="53.34" drill="0.65"/>
+<hole x="38.1" y="53.34" drill="0.65"/>
+<hole x="39.37" y="53.34" drill="0.65"/>
+<hole x="40.64" y="53.34" drill="0.65"/>
+<hole x="41.91" y="53.34" drill="0.65"/>
+<hole x="43.18" y="53.34" drill="0.65"/>
+<hole x="44.45" y="53.34" drill="0.65"/>
+<hole x="45.72" y="53.34" drill="0.65"/>
+<hole x="46.99" y="53.34" drill="0.65"/>
+<hole x="48.26" y="53.34" drill="0.65"/>
+<hole x="49.53" y="53.34" drill="0.65"/>
+<hole x="50.8" y="53.34" drill="0.65"/>
+<hole x="52.07" y="53.34" drill="0.65"/>
+<hole x="53.34" y="53.34" drill="0.65"/>
+<hole x="54.61" y="53.34" drill="0.65"/>
+<hole x="55.88" y="53.34" drill="0.65"/>
+<hole x="57.15" y="53.34" drill="0.65"/>
+<hole x="58.42" y="53.34" drill="0.65"/>
+<hole x="59.69" y="53.34" drill="0.65"/>
+<hole x="60.96" y="53.34" drill="0.65"/>
+<hole x="62.23" y="53.34" drill="0.65"/>
+<hole x="63.5" y="53.34" drill="0.65"/>
+<hole x="64.77" y="53.34" drill="0.65"/>
+<hole x="66.04" y="53.34" drill="0.65"/>
+<hole x="67.31" y="53.34" drill="0.65"/>
+<hole x="68.58" y="53.34" drill="0.65"/>
+<hole x="69.85" y="53.34" drill="0.65"/>
+<hole x="71.12" y="53.34" drill="0.65"/>
+<hole x="72.39" y="53.34" drill="0.65"/>
+<hole x="73.66" y="53.34" drill="0.65"/>
+<hole x="74.93" y="53.34" drill="0.65"/>
+<hole x="76.2" y="53.34" drill="0.65"/>
+<hole x="77.47" y="53.34" drill="0.65"/>
+<hole x="78.74" y="53.34" drill="0.65"/>
+<hole x="80.01" y="53.34" drill="0.65"/>
+<hole x="81.28" y="53.34" drill="0.65"/>
+<hole x="82.55" y="53.34" drill="0.65"/>
+<hole x="83.82" y="53.34" drill="0.65"/>
+<hole x="85.09" y="53.34" drill="0.65"/>
+</plain>
+<libraries>
+<library name="myLibrary">
+<packages>
+<package name="XH2.54_2-PIN">
+<description>Max Rating: 250V - 3A</description>
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.778"/>
+<wire x1="-3.81" y1="3.4" x2="3.81" y2="3.4" width="0.127" layer="21"/>
+<wire x1="3.81" y1="3.4" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
+<text x="-3.81" y="-3.81" size="1.016" layer="27" align="center-left">&gt;VALUE</text>
+</package>
+<package name="RGB-CUBE-BUS">
+<pad name="L" x="-2" y="0" drill="1.016" diameter="1.778"/>
+<pad name="R" x="2" y="0" drill="1.016" diameter="1.778"/>
+<text x="-3.81" y="0" size="1.27" layer="21" align="center">L</text>
+<text x="3.81" y="0" size="1.27" layer="21" align="center">R</text>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="6mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="P1" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="3.81" smashed="yes">
+<attribute name="VALUE" x="39.37" y="0" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B1" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="3.81" smashed="yes"/>
+<element name="B2" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="3.81" smashed="yes"/>
+<element name="B3" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="3.81" smashed="yes"/>
+<element name="B4" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="3.81" smashed="yes"/>
+<element name="P2" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="11.43" smashed="yes">
+<attribute name="VALUE" x="39.37" y="7.62" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B5" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="11.43" smashed="yes"/>
+<element name="B6" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="11.43" smashed="yes"/>
+<element name="B7" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="11.43" smashed="yes"/>
+<element name="B8" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="11.43" smashed="yes"/>
+<element name="P3" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="19.05" smashed="yes">
+<attribute name="VALUE" x="39.37" y="15.24" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B9" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="19.05" smashed="yes"/>
+<element name="B10" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="19.05" smashed="yes"/>
+<element name="B11" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="19.05" smashed="yes"/>
+<element name="B12" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="19.05" smashed="yes"/>
+<element name="P4" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="26.67" smashed="yes">
+<attribute name="VALUE" x="39.37" y="22.86" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B13" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="26.67" smashed="yes"/>
+<element name="B14" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="26.67" smashed="yes"/>
+<element name="B15" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="26.67" smashed="yes"/>
+<element name="B16" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="26.67" smashed="yes"/>
+<element name="P5" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="34.29" smashed="yes">
+<attribute name="VALUE" x="39.37" y="30.48" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B17" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="34.29" smashed="yes"/>
+<element name="B18" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="34.29" smashed="yes"/>
+<element name="B19" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="34.29" smashed="yes"/>
+<element name="B20" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="34.29" smashed="yes"/>
+<element name="P6" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="41.91" smashed="yes">
+<attribute name="VALUE" x="39.37" y="38.1" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B21" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="41.91" smashed="yes"/>
+<element name="B22" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="41.91" smashed="yes"/>
+<element name="B23" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="41.91" smashed="yes"/>
+<element name="B24" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="41.91" smashed="yes"/>
+<element name="P7" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="49.53" smashed="yes">
+<attribute name="VALUE" x="39.37" y="45.72" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B25" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="49.53" smashed="yes"/>
+<element name="B26" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="49.53" smashed="yes"/>
+<element name="B27" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="49.53" smashed="yes"/>
+<element name="B28" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="49.53" smashed="yes"/>
+<element name="P8" library="myLibrary" package="XH2.54_2-PIN" value="" x="43.18" y="57.15" smashed="yes">
+<attribute name="VALUE" x="39.37" y="53.34" size="1.016" layer="27" align="center-left"/>
+</element>
+<element name="B29" library="myLibrary" package="RGB-CUBE-BUS" value="" x="5.08" y="57.15" smashed="yes"/>
+<element name="B30" library="myLibrary" package="RGB-CUBE-BUS" value="" x="30.48" y="57.15" smashed="yes"/>
+<element name="B31" library="myLibrary" package="RGB-CUBE-BUS" value="" x="55.88" y="57.15" smashed="yes"/>
+<element name="B32" library="myLibrary" package="RGB-CUBE-BUS" value="" x="81.28" y="57.15" smashed="yes"/>
+</elements>
+<signals>
+<signal name="L">
+<contactref element="B1" pad="L"/>
+<contactref element="P1" pad="1"/>
+<contactref element="B2" pad="L"/>
+<contactref element="B3" pad="L"/>
+<contactref element="B4" pad="L"/>
+<contactref element="B5" pad="L"/>
+<contactref element="P2" pad="1"/>
+<contactref element="B6" pad="L"/>
+<contactref element="B7" pad="L"/>
+<contactref element="B8" pad="L"/>
+<contactref element="B9" pad="L"/>
+<contactref element="P3" pad="1"/>
+<contactref element="B10" pad="L"/>
+<contactref element="B11" pad="L"/>
+<contactref element="B12" pad="L"/>
+<contactref element="B13" pad="L"/>
+<contactref element="P4" pad="1"/>
+<contactref element="B14" pad="L"/>
+<contactref element="B15" pad="L"/>
+<contactref element="B16" pad="L"/>
+<contactref element="B17" pad="L"/>
+<contactref element="P5" pad="1"/>
+<contactref element="B18" pad="L"/>
+<contactref element="B19" pad="L"/>
+<contactref element="B20" pad="L"/>
+<contactref element="B21" pad="L"/>
+<contactref element="P6" pad="1"/>
+<contactref element="B22" pad="L"/>
+<contactref element="B23" pad="L"/>
+<contactref element="B24" pad="L"/>
+<contactref element="B25" pad="L"/>
+<contactref element="P7" pad="1"/>
+<contactref element="B26" pad="L"/>
+<contactref element="B27" pad="L"/>
+<contactref element="B28" pad="L"/>
+<contactref element="B29" pad="L"/>
+<contactref element="P8" pad="1"/>
+<contactref element="B30" pad="L"/>
+<contactref element="B31" pad="L"/>
+<contactref element="B32" pad="L"/>
+<polygon width="0.254" layer="1">
+<vertex x="-2.54" y="-2.54"/>
+<vertex x="88.9" y="-2.54"/>
+<vertex x="88.9" y="63.5"/>
+<vertex x="-2.54" y="63.5"/>
+</polygon>
+<wire x1="3.08" y1="11.43" x2="3.08" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="19.05" x2="3.08" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="26.67" x2="3.08" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="34.29" x2="3.08" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="41.91" x2="3.08" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="49.53" x2="3.08" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="57.15" x2="3.08" y2="49.53" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="R">
+<contactref element="B1" pad="R"/>
+<contactref element="P1" pad="2"/>
+<contactref element="B2" pad="R"/>
+<contactref element="B3" pad="R"/>
+<contactref element="B4" pad="R"/>
+<contactref element="B5" pad="R"/>
+<contactref element="P2" pad="2"/>
+<contactref element="B6" pad="R"/>
+<contactref element="B7" pad="R"/>
+<contactref element="B8" pad="R"/>
+<contactref element="B9" pad="R"/>
+<contactref element="P3" pad="2"/>
+<contactref element="B10" pad="R"/>
+<contactref element="B11" pad="R"/>
+<contactref element="B12" pad="R"/>
+<contactref element="B13" pad="R"/>
+<contactref element="P4" pad="2"/>
+<contactref element="B14" pad="R"/>
+<contactref element="B15" pad="R"/>
+<contactref element="B16" pad="R"/>
+<contactref element="B17" pad="R"/>
+<contactref element="P5" pad="2"/>
+<contactref element="B18" pad="R"/>
+<contactref element="B19" pad="R"/>
+<contactref element="B20" pad="R"/>
+<contactref element="B21" pad="R"/>
+<contactref element="P6" pad="2"/>
+<contactref element="B22" pad="R"/>
+<contactref element="B23" pad="R"/>
+<contactref element="B24" pad="R"/>
+<contactref element="B25" pad="R"/>
+<contactref element="P7" pad="2"/>
+<contactref element="B26" pad="R"/>
+<contactref element="B27" pad="R"/>
+<contactref element="B28" pad="R"/>
+<contactref element="B29" pad="R"/>
+<contactref element="P8" pad="2"/>
+<contactref element="B30" pad="R"/>
+<contactref element="B31" pad="R"/>
+<contactref element="B32" pad="R"/>
+<polygon width="0.254" layer="16">
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="87.63" y="-1.27"/>
+<vertex x="87.63" y="62.23"/>
+<vertex x="-1.27" y="62.23"/>
+</polygon>
+<wire x1="7.08" y1="11.43" x2="7.08" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="7.08" y1="19.05" x2="7.08" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="7.08" y1="26.67" x2="7.08" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="7.08" y1="34.29" x2="7.08" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="7.08" y1="41.91" x2="7.08" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="7.08" y1="49.53" x2="7.08" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="7.08" y1="57.15" x2="7.08" y2="49.53" width="0" layer="19" extent="1-1"/>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+</eagle>
