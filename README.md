@@ -1,4 +1,4 @@
-# FFT Spectrum Analyser
+# 8x8x8 RGB LED cube
 
 
 ## Features
