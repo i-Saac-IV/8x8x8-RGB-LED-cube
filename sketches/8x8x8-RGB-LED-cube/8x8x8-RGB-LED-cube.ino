@@ -141,10 +141,10 @@ void loop() {  //loop for core 0 (FastLED core)
 
   switch (mode) {
     case 0:
-      confetti(hue, 200, paletteMode);
+      confetti(hue, 200, paletteMode, 1);
       break;
     case 1:
-      raining(hue, 255, 70);
+      raining(hue, 255, 70, 5);
       break;
     default:
       mode = 0;
@@ -176,12 +176,15 @@ int calc_target_led(int x, int y, int z) {  // cube mapping magic
 
 /************************************* ANIMATIONS *************************************/
 
-void confetti(int h, int s, int fade) {
-  fadeToBlackBy(led_cube, NUM_LEDS, fade);
-  led_cube[random(NUM_LEDS)] += CHSV(h + random(32), s, 255);
+void confetti(int h, int s, int fade, int rate) {
+  if (counter % rate == 1) {
+    fadeToBlackBy(led_cube, NUM_LEDS, fade);
+    led_cube[random(NUM_LEDS)] += CHSV(h + random(32), s, 255);
+  }
 }
 
-void raining(int h, int s, int fade) {
+void raining(int h, int s, int fade, int rate) {
+  if (counter % rate == 1) {
   for (int yLevel = LED_CUBE_SIZE - 1; yLevel >= 0; yLevel--) {
     for (int led = 0; led < LED_CUBE_SIZE * LED_CUBE_SIZE; led++) {
       led_cube[led + ((yLevel * LED_CUBE_SIZE * LED_CUBE_SIZE) - 1)] += led_cube[led + ((yLevel * LED_CUBE_SIZE * LED_CUBE_SIZE) - 2)];
@@ -189,7 +192,7 @@ void raining(int h, int s, int fade) {
     led_cube[calc_target_led(LED_CUBE_SIZE - 1, random(LED_CUBE_SIZE - 1), LED_CUBE_SIZE - 1)] += CHSV(h, s, 255);
   }
   fadeToBlackBy(led_cube, NUM_LEDS, fade);
-  // delay(20);
+  }
 }
 
 
@@ -312,7 +315,7 @@ void cycleSaturation() {
   paletteSaturation++;
   switch (paletteSaturation) {
     case 0:
-      
+
       break;
     case 1:
 
