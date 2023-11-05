@@ -104,14 +104,14 @@ void loop() {
       confetti(hue, 200, 20, 5);
       break;
     case 1:
-      raining(hue, 255, 25, 5);
+      raining(hue, 255, 0.75, 7, 0.9);
       break;
     default:
       FastLED.clear();
       break;
   }
-  Serial.println();
 
+  Serial.println();
   FastLED.show();
   hue -= 0.1;
   counter++;
@@ -138,21 +138,32 @@ int calc_target_led(int x, int y, int z) {  // cube mapping magic
 
 /************************************* ANIMATIONS *************************************/
 
-void confetti(int h, int s, int dimFration, int rate) {
+void confetti(uint8_t h, uint8_t s, uint8_t dimFration, uint8_t rate) {
   if (counter % rate == 0) {
     fadeToBlackBy(led_cube, NUM_LEDS, dimFration);
     led_cube[random(NUM_LEDS)] += CHSV(h + random(32), s, 255);
   }
 }
 
-void raining(int h, int s, int dimFration, int rate) {
+void raining(uint8_t h, uint8_t s, float dimFration, uint8_t rate, unsigned long numberOfDrops) {
   if (counter % rate == 0) {
     for (int yLevel = 0; yLevel <= LED_CUBE_SIZE - 2; yLevel++) {
       for (int led = 0; led <= (LED_CUBE_SIZE * LED_CUBE_SIZE) - 1; led++) {
-        led_cube[led + (yLevel * LED_CUBE_SIZE * LED_CUBE_SIZE)] = led_cube[led + ((yLevel + 1) * LED_CUBE_SIZE * LED_CUBE_SIZE)];
+        int copyFromPos = led + ((yLevel + 1) * LED_CUBE_SIZE * LED_CUBE_SIZE);
+        int pasteToPos = led + (yLevel * LED_CUBE_SIZE * LED_CUBE_SIZE);
+        uint8_t newRed = led_cube[copyFromPos].r * dimFration;
+        uint8_t newGreen = led_cube[copyFromPos].g * dimFration;
+        uint8_t newBlue = led_cube[copyFromPos].b * dimFration;
+        led_cube[pasteToPos] = led_cube[copyFromPos];
+        led_cube[copyFromPos] = CRGB(newRed, newGreen, newBlue);
       }
     }
-    led_cube[calc_target_led(random(LED_CUBE_SIZE), LED_CUBE_SIZE - 1, random(LED_CUBE_SIZE))] = CHSV(h, s, 255);
-    fadeToBlackBy(led_cube, NUM_LEDS, dimFration);
+    if (numberOfDrops % 1 != 0) {
+      if (random((int)((numberOfDrops % 1) * 100))) led_cube[calc_target_led(random(LED_CUBE_SIZE), LED_CUBE_SIZE - 1, random(LED_CUBE_SIZE))] = CHSV(h, s, 255);
+    } else {
+      for (int i = 0; i <= numberOfDrops; i++) {
+        led_cube[calc_target_led(random(LED_CUBE_SIZE), LED_CUBE_SIZE - 1, random(LED_CUBE_SIZE))] = CHSV(h, s, 255);
+      }
+    }
   }
 }
