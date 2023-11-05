@@ -4,15 +4,14 @@ Creator: Isaac Pawley
 Date: 23-09-2023
 Repo: https://github.com/i-Saac-IV/8x8x8-RGB-LED-cube
 
-Hiya! This is just some code to control an pretty cool 8x8x8 addressable LED cube. It may or may not work with smaller/larger cube sizes, but I can't test them.
+Hiya! This is just some code to control an pretty cool 4x4x4 addressable LED cube. It may or may not work with smaller/larger cube sizes, but I can't test them.
 Be sure to set size of the cube, the pin its attached to, the audio in pin and mic.
 
-Pressing button A will change the VU meter animation, long press of the button changes the audio input (green: line in, red: mic, default: line in).
-Pressing button B will change the colour paletteMode.
+This is a testing sketch.
 
 Original hardware:
-Raspberry Pi Pico
-512 WS2182B 8mm LEDs
+Arduino Uno
+64 WS2182B 8mm LEDs
 
 */
 
@@ -28,7 +27,7 @@ Raspberry Pi Pico
 #define LED_CUBE_PIN 7
 
 /* maths stuff, change as needed */
-#define LED_CUBE_SIZE 4  // number of leds along an edge, this assumes its a true cube, not rectangular prism (UPDATE IF STATMENTS IN FFT IF CHANGED FROM 8)
+#define LED_CUBE_SIZE 4  // number of leds along an edge, this assumes its a true cube, not rectangular prism
 #define MAX_BRIGHTNESS 100
 #define FRAMES_PER_SECOND 120
 #define NUM_LEDS (LED_CUBE_SIZE * LED_CUBE_SIZE * LED_CUBE_SIZE)
@@ -40,13 +39,6 @@ Raspberry Pi Pico
 /* global variables, generally these dont need changing */
 double hue = 0.00;
 unsigned long counter = 0UL;
-volatile uint8_t mode = 0;
-volatile bool updatePalette = 1;
-uint8_t palette[LED_CUBE_SIZE + 1];
-volatile uint8_t paletteSaturation = 0;
-volatile uint8_t paletteMode = 0;
-volatile int brightness;
-volatile bool mic_en = 0;
 
 /* class constructors */
 CRGB led_cube[NUM_LEDS];
@@ -54,7 +46,7 @@ CRGB led_cube[NUM_LEDS];
 /**************************************** CORE 0 ***************************************/
 
 void setup() {  //setup for core 0 (FastLED core)
-  //delay(3000);
+  // delay(3000);
   Serial.begin(19200);
   Serial.println(__FILE__);
   Serial.println(__DATE__);
@@ -63,7 +55,7 @@ void setup() {  //setup for core 0 (FastLED core)
   FastLED.addLeds<LED_TYPE, LED_CUBE_PIN, COLOUR_ORDER>(led_cube, NUM_LEDS).setCorrection(TypicalLEDStrip);
   FastLED.setBrightness(map(analogRead(BRIGHTNESS_POT_PIN), 0, 1024, 0, MAX_BRIGHTNESS));
 
-  //led matrix sanitiy check
+  // led matrix sanitiy check
   fill_solid(led_cube, NUM_LEDS, CRGB::Red);
   FastLED.show();
   delay(333);
@@ -78,26 +70,6 @@ void setup() {  //setup for core 0 (FastLED core)
 
 void loop() {
   FastLED.setBrightness(map(analogRead(BRIGHTNESS_POT_PIN), 0, 1024, 0, MAX_BRIGHTNESS));
-  /*
-  if (updatePalette) {  // update the colour paletteMode
-    switch (paletteMode) {
-      case 0:  // static rainbow
-        for (int i = 0; i < LED_CUBE_SIZE - 1; i++) {
-          palette[i] = (255 / LED_CUBE_PIN) * i;
-        }
-        break;
-      case 1:  // rainbow
-        for (int i = 0; i < LED_CUBE_SIZE - 1; i++) {
-          palette[i] = ((255 / LED_CUBE_PIN) * i) + hue;
-        }
-        break;
-      default:
-        paletteMode = 0;
-        break;
-    }
-    updatePalette = !updatePalette;
-  }
-  */
 
   switch (round(map(analogRead(POT_A_PIN), 0, 1024, 0, 10))) {
     case 0:
